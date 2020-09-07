@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrada Fuentes Luana">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Primer Proyecto Acámica</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="/Images/logo.svg" alt="logo" >
+        <nav>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <span id="line1"></span>
+                <span id="line2" ></span>
+                <span id="line3"></span>
+            </label>
+            <ul>
+                <li><a href="#episodios">EPISODIOS</a></li>
+                <li><a href="#somos">NOSOTROS</a></li>
+                <li><a href="#invitados">ENTREVISTAS</a></li>
+                <li><a href="#topicos">TÓPICOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Hello <span class="linet">world</span> 
+            <br>
+            pale blue dot<span class="bluedot">.</span>
+        </h1>
+        <p>
+            Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 dias.
+        </p>
+        <div class="buttons"><a href="#somos">CONOCÉ MÁS </a></div>
+
+        <!--Episodios-->
+
+        <section id="container_one">
+
+            <h2 id="episodios">Episodios</h2>
+            <div id="podcast">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu"  height="232" ></iframe>
+
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"                 height="232">
+                </iframe>
+
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+                  height="232">
+                </iframe>
+
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" 
+                  height="232"></iframe>
+
+            </div>
+
+        </section>
+
+
+         <!--De dónde Venimos-->
+
+        
+        <section id="container_two">
+            <img src="Images/phone.png" alt=" celular mostrando una noticia">
+            <h2 id="somos">De dónde venimos</h2>
+            <p class="text">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. </p>
+            <p class="text2">
+            Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+            </p>
+        </section>
+
+         <!--Invitados-->
+
+
+        <section id="container_three">
+            <h2 id="invitados">Invitadas/os estelares</h2>
+            <div>      
+                <img src="Images/grace-hopper.png" alt="Grace_Hopper">
+
+                <img src="Images/Katie-Bouman.png" alt="Katie_Bauman">
+
+                <img src="Images/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+
+                <img src="Images/computer.png" alt="computer 1950">
+
+                <img src="Images/computer_operators.png" alt="Computer operators">
+                <img src="Images/susan-kare.png" alt="Susan_kare">
+            </div>   
+
+        </section>
+
+         <!--Temas-->
+
+        <section id="container_four">
+            <h2 id="topicos">Algunos de nuestros temas</h2>
+            <article class="topics">
+                <div>
+                    <img src="Images/icon1.svg" alt=" imagen trabajo remoto">
+                    <p>Trabajo remoto</p>
+                </div>
+                <div>
+                    <img src="Images/icon2.svg" alt="Repensando la programación">
+                    <p> Repensando la programación</p>
+                </div>
+                <div>
+                    <img src="Images/icon3.svg" alt=" bases del código">
+                    <p>Bases del código</p>
+                </div>
+                <div>
+                    <img src="Images/icon4.svg" alt="seguridad informática">
+                    <p>Seguridad informática</p>
+                </div>
+            </article>
+        </section>
+
+         <!--Novedades-->
+
+        <section id="container_five">
+            <h2>¿Querés las últimas novedades?</h2>
+            <div class="buttons"><a href="#episodios">ESCUCHÁ LOS EPISODIOS </a></div>
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2019— Hello blue pale dot</p>
+        <div>
+            <a href="https://www.spotify.com/ar/" target="_blank" title="Spotify">
+                <i class="fab fa-spotify"></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/?lang=ES" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://web.telegram.org/#/login" target="_blank" title="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/fd8172713c.js" crossorigin="anonymous"></script>
+</body>
+</html>

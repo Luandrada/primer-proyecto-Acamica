@@ -1,0 +1,206 @@
+%h2-styles {
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    
+}
+
+%p-styles {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+%buttons {
+    background: #00F3BB;
+    width: 288px;
+    height: 48px;
+    position: relative;
+    
+    a {
+        text-decoration: none;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #060A24;
+        position: absolute;
+       top: 13px;
+       left: 96px;
+        line-height: 22px;
+        font-weight: 500; 
+
+    }
+}
+
+main {
+    h1{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-top: 29px;
+        margin-left: 5vw;
+        margin-bottom: 16px;
+        .linet {
+            text-decoration: line-through;
+        }
+    }
+    p{
+        @extend %p-styles ;
+        width: 90vw;
+        height: 66px;
+        margin-left: 5vw;
+        margin-bottom: 36px;
+        
+    }
+    .buttons {
+     margin-bottom: 24px;
+     margin-left: 5vw;
+     @extend %buttons;
+    }
+    //Episodios
+
+    #container_one{
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+        padding-bottom: 143.5px;
+        h2{
+            @extend %h2-styles;
+            color: #FFFFFF;
+            padding-top: 64px;
+            margin-bottom: 21px;
+            margin-left: 5vw;
+            
+        }
+        #podcast{
+            display: grid;
+            grid-template-columns: 90vw;
+            grid-template-rows: 243px 243px 243px 243px;
+            justify-content: center;
+            iframe {
+                width: 100%; 
+                border: 0px;   
+                
+            }
+        }
+    }
+    //De donde venimos
+    #container_two {
+        display: grid;
+        grid-template-columns: 90vw;
+        justify-content: center;
+        margin-top: -96px;
+        margin-bottom: 60px;
+        justify-items: center;
+        img{
+            width: 360px;
+            height: 519px;
+            justify-self: center;
+            position: relative;
+            
+        }
+        h2{
+            @extend %h2-styles;
+            color: #060A24;
+            
+        }
+        p  {
+            @extend %p-styles ;
+            width: 100%;
+            max-width: 464px;
+            margin-left: 0;
+            &:first-of-type{
+                margin-top: 8px;
+                margin-bottom: 70px;
+                
+            }
+
+        }
+    }
+    //Invitados
+
+    #container_three {
+        
+        h2{
+            @extend %h2-styles;
+            margin-bottom: 14px;
+            margin-left: 5vw;
+
+        }
+        div{
+            display: grid;
+            grid-template-columns: 100%;
+            width: 100%;
+            img{
+                width: 100%;
+                height: 243px;
+                }
+        }
+    }
+    //Temas
+
+    #container_four {
+        margin-top: 48px;
+        h2{
+            @extend %h2-styles;
+            margin-left: 5vw;
+        }
+        .topics {
+            display: grid;
+            grid-template-columns:100% ;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 186px;
+                margin-top: 35px;
+                &:first-of-type{
+                    margin-top: 37px;
+                }
+                img{
+                    width: 104px;
+                    height: 104px;
+                }
+                p{
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: bolder;
+                    font-size: 24px;
+                    color: #060A24;
+                    text-align: center;
+                    margin: 0;
+                    margin-top: 13px;
+                    line-height: 30px;
+
+                }
+            }
+        }
+    }
+    //Novedades
+
+    #container_five{
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            @extend %h2-styles;
+            text-align: center;
+            color: #FFFFFF;
+            width: 90vw;
+            margin-top: 64px;
+            margin-bottom: 36px;
+            font-weight: 500;
+        }
+        .buttons{
+            margin-bottom: 67px;
+            margin-left: 0;
+            a{
+                left: 43px;
+            }
+        }
+    }
+
+}

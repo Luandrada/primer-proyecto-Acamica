@@ -1,0 +1,28 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        text-align: center;
+        font-family:'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: #060A24;
+        line-height: 22px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        width: 71vw;
+        margin-bottom: 31px;
+        a{
+            text-decoration: none;
+            color: black;
+            i{
+                width: 16px;
+                height: 28px;
+            }           
+        }
+    }
+}

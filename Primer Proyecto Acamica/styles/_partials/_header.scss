@@ -1,0 +1,102 @@
+
+
+header{ display: flex;
+    justify-content: space-between;
+    height: 44px;
+    width: 100%;
+    
+    img{
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 5;
+    }
+    nav{
+        margin-right: 19px;
+        input{
+            visibility: hidden;
+            &:checked ~ ul{
+                opacity: 1;
+                position: absolute;
+                z-index: 2;            
+            }
+            &:checked ~ label{
+                #line2 {
+                    opacity: 0;
+                   }
+                #line1 {
+                   
+                    transform: rotate(45deg) translateY(7px);
+                    
+                }
+                #line3{
+                    transform: rotate(-45deg) translateY(-7.5px);
+                }
+            }
+        }
+        label{ 
+            
+           
+            span{
+                display: block;
+                background-color: black;
+                width: 18px;
+                height: 2px;
+            }
+            
+            #line2 {
+                margin-top: 3px;
+                margin-bottom: 3px;
+                }
+            
+              
+         } 
+        ul{
+            background-color: #0000EC ;
+            height: 224px;
+            opacity: 0;
+            position: absolute; 
+            z-index: -1;
+            width: 100%;
+            right: 0;
+            margin-top: 14px;
+               
+                
+            li{
+                list-style: none;
+                margin-left: 16px;
+                margin-bottom: 24px;
+                &:first-of-type{
+                    padding-top: 16px;
+                    }
+                  
+                a{
+                    text-decoration: none;
+                    font-family: 'IBM Plex Mono', monospace;
+                    color:white;
+                    font-size: 16px;
+                    line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @keyframes cruz {
+        from{
+            transform: rotate(0deg);
+        }
+        to{ transform: rotate(45deg);}
+
+    }
+
+    @keyframes raya2{
+        from{
+            transform: rotate(0deg);
+        }
+        to{ transform: rotate(-45deg);}
+
+    }
